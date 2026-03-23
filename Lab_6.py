@@ -35,8 +35,8 @@ def main():
     first_column = [row[0] for row in matrix]
     print("First column:", first_column)
 
-    upper_left_2x2 = [row[:2] for row in matrix[:2]]
-    print("Upper-left 2x2 sub-array:", upper_left_2x2)
+    lower_left_2x2 = [row[2:4] for row in matrix[1:3]]
+    print("Lower-left 2x2 sub-array:", lower_left_2x2)
 
     row_index = d1 % len(matrix)
     col_index = d2 % len(matrix[0])
